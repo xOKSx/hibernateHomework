@@ -4,6 +4,7 @@ import org.junit.jupiter.api.*;
 import ru.fintech.qa.homework.db.jdbc.DbService;
 import ru.fintech.qa.homework.utils.BeforeUtils;
 
+
 public class JDBCTests {
 
     private DbService dbService;
@@ -38,6 +39,38 @@ public class JDBCTests {
         System.out.println("Индекс 1:");
         int updatedRows = dbService.executeQueryUpdatedRows(
                 "insert into public.animal (id, \"name\", age, \"type\", sex, place) values (1, 'Test_Name', 1, 1, 1, 1)");
+        Assertions.assertEquals(0, updatedRows);
+        System.out.println("Индекс 2:");
+        updatedRows = dbService.executeQueryUpdatedRows(
+                "insert into public.animal (id, \"name\", age, \"type\", sex, place) values (2, 'Test_Name', 1, 1, 1, 1)");
+        Assertions.assertEquals(0, updatedRows);
+        System.out.println("Индекс 3:");
+        updatedRows = dbService.executeQueryUpdatedRows(
+                "insert into public.animal (id, \"name\", age, \"type\", sex, place) values (3, 'Test_Name', 1, 1, 1, 1)");
+        Assertions.assertEquals(0, updatedRows);
+        System.out.println("Индекс 4:");
+        updatedRows = dbService.executeQueryUpdatedRows(
+                "insert into public.animal (id, \"name\", age, \"type\", sex, place) values (4, 'Test_Name', 1, 1, 1, 1)");
+        Assertions.assertEquals(0, updatedRows);
+        System.out.println("Индекс 5:");
+        updatedRows = dbService.executeQueryUpdatedRows(
+                "insert into public.animal (id, \"name\", age, \"type\", sex, place) values (5, 'Test_Name', 1, 1, 1, 1)");
+        Assertions.assertEquals(0, updatedRows);
+        System.out.println("Индекс 6:");
+        updatedRows = dbService.executeQueryUpdatedRows(
+                "insert into public.animal (id, \"name\", age, \"type\", sex, place) values (6, 'Test_Name', 1, 1, 1, 1)");
+        Assertions.assertEquals(0, updatedRows);
+        System.out.println("Индекс 7:");
+        updatedRows = dbService.executeQueryUpdatedRows(
+                "insert into public.animal (id, \"name\", age, \"type\", sex, place) values (7, 'Test_Name', 1, 1, 1, 1)");
+        Assertions.assertEquals(0, updatedRows);
+        System.out.println("Индекс 8:");
+        updatedRows = dbService.executeQueryUpdatedRows(
+                "insert into public.animal (id, \"name\", age, \"type\", sex, place) values (8, 'Test_Name', 1, 1, 1, 1)");
+        Assertions.assertEquals(0, updatedRows);
+        System.out.println("Индекс 9:");
+        updatedRows = dbService.executeQueryUpdatedRows(
+                "insert into public.animal (id, \"name\", age, \"type\", sex, place) values (9, 'Test_Name', 1, 1, 1, 1)");
         Assertions.assertEquals(0, updatedRows);
         System.out.println("Индекс 10:");
         updatedRows = dbService.executeQueryUpdatedRows(
